@@ -29,69 +29,27 @@ title: Home
    <div class="row">
 
       <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-halves">
-
+        {% for event in site.events %}
         <div class="columns portfolio-item">
             <div class="item-wrap">
-            <a href="portfolio.html">
-                  <img alt="" src="/assets/images/portfolio/geometrics.jpg">
+            <a href="{{ event.url }}">
+                  <img alt="" src="{{ event.image }}">
                   <div class="overlay"></div>
                   <div class="link-icon"><i class="fa fa-link"></i></div>
                </a>
            <div class="portfolio-item-meta">
-              <h5><a href="portfolio.html">Geometrics</a></h5>
-                  <p>Illustration</p>
+              <h5><a href="{{ event.url }}">{{ event.name }}</a></h5>
+                  <p>{{ event.date_time_venue }}</p>
            </div>
             </div>
        </div>
+       {% endfor %}
 
-         <div class="columns portfolio-item">
-            <div class="item-wrap">
-            <a href="portfolio.html">
-                  <img alt="" src="/assets/images/portfolio/console.jpg">
-                  <div class="overlay"></div>
-                  <div class="link-icon"><i class="fa fa-link"></i></div>
-               </a>
-           <div class="portfolio-item-meta">
-              <h5><a href="portfolio.html">Console</a></h5>
-                  <p>Web Development</p>
-           </div>
-            </div>
-       </div>
-
-         <div class="columns portfolio-item s-first">
-            <div class="item-wrap">
-            <a href="portfolio.html">
-                  <img alt="" src="/assets/images/portfolio/camera-man.jpg">
-                  <div class="overlay"></div>
-                  <div class="link-icon"><i class="fa fa-link"></i></div>
-               </a>
-           <div class="portfolio-item-meta">
-              <h5><a href="portfolio.html">Camera Man</a></h5>
-                  <p>Photography</p>
-           </div>
-            </div>
-       </div>
-
-         <div class="columns portfolio-item">
-            <div class="item-wrap">
-            <a href="portfolio.html">
-                  <img alt="" src="/assets/images/portfolio/into-the-light.jpg">
-                  <div class="overlay"></div>
-                  <div class="link-icon"><i class="fa fa-link"></i></div>
-               </a>
-           <div class="portfolio-item-meta">
-              <h5><a href="portfolio.html">Into The Light</a></h5>
-                  <p>Branding</p>
-           </div>
-            </div>
-       </div>
 
       </div>
 
    </div>
 
-</section> <!-- Works Section End-->   
+</section> <!-- Works Section End-->
 
 <!-- Content End-->
-
-   
