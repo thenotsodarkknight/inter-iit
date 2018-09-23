@@ -26,95 +26,27 @@ title: Home
       <div id="page-content" class="row portfolio">
 
          <section class="entry cf">
-
+           {% for competition in site.competitions %}
             <div id="secondary"  class="three columns entry-details">
 
-                  <h1>Competition 1</h1>
+                  <h1>{{ competition.name }}</h1>
 
                   <div class="entry-description">
 
-                     <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
-                     nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate
-                     cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a
-                     ornare odio.</p>
+                  {{ competition.content | markdownify }}
 
                   </div>
 
                   <ul class="portfolio-meta-list">
-						   <li><span>Date: </span>January 2014</li>
-						   <li><span>Venue: </span>Styleshout</li>
+						   <li><span>Date: </span>{{ competition.date }}</li>
+						   <li><span>Venue: </span>{{ competition.venue }}</li>
 						   <!--<li><span>Skills: </span>Photoshop, Photography, Branding</li>-->
 				      </ul>
 
-                  <a class="button" href="http://behance.net">Problem Statement</a>
-
-            </div> <!-- secondary End-->
-<div id="secondary"  class="three columns entry-details">
-
-                  <h1>Competition 2</h1>
-
-                  <div class="entry-description">
-
-                     <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
-                     nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate
-                     cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a
-                     ornare odio.</p>
-
-                  </div>
-
-                  <ul class="portfolio-meta-list">
-						   <li><span>Date: </span>December 2018</li>
-						   <li><span>Venue: </span>Styleshout</li>
-						   <!--<li><span>Skills: </span>Photoshop, Photography, Branding</li>-->
-				      </ul>
-
-                  <a class="button" href="http://behance.net">Problem Statement</a>
+                  <a class="button" href="{{ competition.link }}">Problem Statement</a>
 
             </div>
-<div id="secondary"  class="three columns entry-details">
-
-                  <h1>Competition 3</h1>
-
-                  <div class="entry-description">
-
-                     <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
-                     nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate
-                     cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a
-                     ornare odio.</p>
-
-                  </div>
-
-                  <ul class="portfolio-meta-list">
-						   <li><span>Date: </span>December 2018</li>
-						   <li><span>Venue: </span>Styleshout</li>
-						   <!--<li><span>Skills: </span>Photoshop, Photography, Branding</li>-->
-				      </ul>
-
-                  <a class="button" href="http://behance.net">Problem Statement</a>
-
-            </div>
-<div id="secondary"  class="three columns entry-details">
-
-                  <h1>Competition 4</h1>
-
-                  <div class="entry-description">
-
-                     <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor,
-                     nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate
-                     cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a
-                     ornare odio.</p>
-
-                  </div>
-
-                  <ul class="portfolio-meta-list">
-						   <li><span>Date: </span>December 2018</li>
-						   <li><span>Venue: </span>Styleshout</li>
-						   <!--<li><span>Skills: </span>Photoshop, Photography, Branding</li>-->
-				      </ul>
-
-                  <a class="button" href="http://behance.net">Problem Statement</a>
-
-            </div>
+          {% endfor %} <!-- secondary End-->
 
 
             <div id="primary" class="eight columns">
@@ -147,5 +79,3 @@ title: Home
       </div>
 
    </div> <!-- content End-->
-
-   
