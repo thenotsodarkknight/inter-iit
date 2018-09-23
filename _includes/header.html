@@ -21,10 +21,9 @@
               <li><a href="/events.html">Events</a>              </li>
                <li><span><a href="/competitions.html">Competitions</a></span>
                   <ul>
-                     <li><a href="/competitions.html">Competition 1</a></li>
-                     <li><a href="/competitions.html">Competition 2</a></li>
-				<li><a href="/competitions.html">Competition 3</a></li>
-				<li><a href="/competitions.html">Competition 4</a></li>
+                     {% for competition in site.competitions %}
+                     <li><a href="{{competition.link}}">{{competition.name}}</a></li>
+                     {% endfor %}
                   </ul>
                </li>
                <li><a href="/team">The Team</a></li>

@@ -1,7 +1,7 @@
 ---
-name: Competition 1
+name: Competition 4
 image: /assets/images/InterIITlogo.png
-date: 25th November, 1999.
+date_time: 6PM | 25th November, 1999.
 venue: C-805, Raheja Ridgewood
 link: /assets/problem_statements/example.pdf
 ---
