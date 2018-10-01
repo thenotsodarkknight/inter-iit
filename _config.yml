@@ -23,7 +23,9 @@ github_username:  jekyll
 
 collections:
   competitions:
+    output: true
   events:
+    output: true
 # Build settings
 markdown: kramdown
 theme: minima

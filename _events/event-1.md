@@ -1,8 +1,10 @@
 ---
 name: BeTiC Medical Innovation Challenge
 image: /assets/images/portfolio/geometrics.jpg
-date_time: 6PM | 25/11 
+date_time: 6PM | 25/11
+layout: event
 venue: LH-101
 link: /assets/problem_statements/Ergonomic_Crutches.pdf
 ---
-Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.
+Ergonomic Crutches - The teams are supposed to build a simple, light weight, easy to
+use, patient friendly device ​that can bear patient’s load and assist walking/activities.

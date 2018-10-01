@@ -753,7 +753,7 @@ ul#nav ul li a {
    color: #544A4A;
 }
 #call-to-action p span {
-	font-family: 'notosans-bold', sans-serif; 
+	font-family: 'notosans-bold', sans-serif;
 	color: #DDD9D9;
 }
 
@@ -1169,8 +1169,8 @@ ol.commentlist {
 /* ------------------------------------------------------------------ */
 
 footer {
-   margin-top: 66px;
-   margin-bottom: 84px;
+   margin-top: 10px;
+   margin-bottom: 10px;
    font-size: 14px;
 }
 footer a, footer a:visited { color: #6A747C; }

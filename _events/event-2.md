@@ -2,7 +2,8 @@
 layout: default
 name: Event 2
 image: /assets/images/portfolio/geometrics.jpg
-date_time: 6PM | 25/11 
+layout: event
+date_time: 6PM | 25/11
 venue: LH-101
 link: /event2
 ---

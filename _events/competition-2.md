@@ -2,6 +2,7 @@
 name: Competition 2
 image: /assets/images/InterIITlogo.png
 date_time: 6PM | 25th November, 1999.
+layout: event
 venue: C-805, Raheja Ridgewood
 link: /assets/problem_statements/example.pdf
 ---
