@@ -142,7 +142,6 @@ body {
    font-family: notosans-regular, sans-serif;
    font-size: 15px;
    line-height: 30px;
-	color: #838C95;
 
    -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 	-webkit-text-size-adjust: 100%;
@@ -805,3 +804,35 @@ properly.
 
 
 
+/* Custom css added by e-aakash*/
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.banner{
+   width: 100%;
+   height: auto;
+   min-height: 100vh;
+   background-position-x: center;
+   background-position-y: center;
+   background-repeat: no-repeat;
+   background-attachment: scroll;
+   background-image: url("/assets/images/banner2.jpg");
+   background-size: cover;
+   background-origin: padding-box;
+   background-clip: border-box;
+}
+
+header.home{
+   background:transparent;
+}
