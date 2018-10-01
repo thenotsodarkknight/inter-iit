@@ -95,15 +95,20 @@ layout: default
 
 <section id = "info" style="height: 100vh;">
   <div class=" align-center">
-    <div id ="123"><button id = "qwe" onclick="myFunction()">Launch</button></div>
+    <div id ="123">
+      {% comment %} <button id = "qwe" onclick="myFunction()">Launch</button> {% endcomment %}
+      <embed id = "abc" src="{{page.link}}" width="60%" style="height: 100vh;" type='application/pdf'> </embed>
+    </div>
 
 </div>
 </section>
+
 <script>
 function myFunction() {document.getElementById("123").innerHTML = "<embed id = "abc" src="{{page.link}}" width="60%" style="height: 100vh;"
 type='application/pdf'>
 </embed>";)"}
 </script>
+
 <div class="content-outer wrap">
   <div id="page-content">
     <br><br>
