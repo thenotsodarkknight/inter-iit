@@ -190,7 +190,7 @@ img { border-radius: 3px; }
 header {
    height: 96px;
    width: 100%;
-   background: transparent;
+   background: #383232 url(../images/header-bg.jpg);
 }
 
 /* header logo */
