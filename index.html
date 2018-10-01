@@ -22,15 +22,9 @@ title: Home
             <ul id="nav" class="nav">
 
               <li class="current"><a href="/">Home</a></li>
+              <li><a href="/vision.html">Vision</a></li>
               <li><a href="/events.html">Events</a>              </li>
-               <li><span><a href="/competitions.html">Competitions</a></span>
-                  <ul>
-                     {% for competition in site.competitions %}
-                     <li><a href="{{competition.link}}">{{competition.name}}</a></li>
-                     {% endfor %}
-                  </ul>
-               </li>
-               <li><a href="/team.html">The Team</a></li>
+              <li><a href="/team.html">The Team</a></li>
                <!-- <li><a href="styles.html">Features</a></li> -->
 
             </ul> <!-- end #nav -->
@@ -49,12 +43,12 @@ title: Home
 <section id="intro">
 
    <!-- Flexslider Start-->
-  <div id="intro-slider" class="flexslider">
+  <!-- <div id="intro-slider" class="flexslider">
 
     <ul class="slides">
-
+ -->
       <!-- Slide -->
-      <li>
+      <!-- <li> -->
         <div class="row">
           <div class="twelve columns">
             <div class="slider-text">
@@ -83,10 +77,10 @@ title: Home
                   
           </div>
         </div>
-      </li>
+      <!-- </li> -->
 
          <!-- Slide -->
-      <li>
+      <!-- <li>
         <div class="row">
           <div class="twelve columns">
             <div class="slider-text">
@@ -112,17 +106,17 @@ title: Home
                   
           </div>
         </div>
-      </li>
+      </li> -->
 
-    </ul>
+<!--     </ul>
 
-  </div> <!-- Flexslider End-->
+  </div> --> <!-- Flexslider End-->
 
 </section> <!-- Intro Section End-->
 
 <!-- Info Section
 ================================================== -->
-<section id="info">
+<!-- <section id="info">
 
    <div class="row">
 
@@ -151,33 +145,16 @@ title: Home
                <li><b>Tech Meet:</b> 18th-20th December 2018</li>
            </ul>
         </div>
-        <!--
-        <div class="columns s-first">
-           <h2>HTML5 + CSS3.</h2>
-
-           <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
-           Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-           </p>
-        </div>
-
-        <div class="columns">
-           <h2>Free of Charge.</h2>
-
-           <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
-           Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-           </p>
-        </div>
-            -->
-
+        
       </div>
 
    </div>
 
-</section> <!-- Info Section End-->
+</section> --> <!-- Info Section End-->
 
 <!-- Works Section
 ================================================== -->
-<section id="works">
+<!-- <section id="works">
 
    <div class="row">
 
@@ -247,7 +224,7 @@ title: Home
 
    </div>
 
-</section> <!-- Works Section End-->
+</section> --> <!-- Works Section End-->
 
 <!-- Journal Section
 ================================================== -->
@@ -260,100 +237,35 @@ title: Home
    </div>
 
    <div class="blog-entries">
-
+    {% for post in site.posts %}
       <!-- Entry -->
       <article class="row entry">
 
          <div class="entry-header">
 
             <div class="permalink">
-               <a href="single.html"><i class="fa fa-link"></i></a>
+               <a href="#{{post.id}}"><i class="fa fa-link"></i></a>
             </div>
 
-            <div class="ten columns entry-title pull-right">
-               <h3><a href="single.html">Proin gravida nibh vel velit auctor aliquet Aenean sollicitudin auctor.</a></h3>
+            <div class="ten columns entry-title pull-right" id="{{ post.id }}">
+               <h3 style="color: #11ABB0;" ><a href="#{{post.id}}">{{ post.name }}</a></h3>
             </div>
 
             <div class="two columns post-meta end">
                <p>
-               <time datetime="2014-01-31" class="post-date" pubdate="">Jan 31, 2014</time>
-               <span class="dauthor">By Sakura Haruno</span>
+               <time datetime="2014-01-31" class="post-date" pubdate="">{{ post.date_time }}</time>
+               <span class="dauthor">{{ post.author }}</span>
                </p>
             </div>
 
          </div>
 
          <div class="ten columns offset-2 post-content">
-            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
-            deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate.
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.
-            <a class="more-link" href="single.html">Read More<i class="fa fa-arrow-circle-o-right"></i></a></p>
+            {{ post.content | markdownify }}
          </div>
 
       </article> <!-- Entry End -->
-
-      <!-- Entry -->
-      <article class="row entry">
-
-         <div class="entry-header">
-
-            <div class="permalink">
-               <a href="single.html"><i class="fa fa-link"></i></a>
-            </div>
-
-            <div class="ten columns entry-title pull-right">
-               <h3><a href="single.html">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed.</a></h3>
-            </div>
-
-            <div class="two columns post-meta end">
-               <p>
-               <time datetime="2014-01-29" class="post-date" pubdate="">Jan 30, 2014</time>
-               <span class="dauthor">By John Doe</span>
-               </p>
-            </div>
-
-         </div>
-
-         <div class="ten columns offset-2 post-content">
-            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
-            deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate.
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.
-            <a class="more-link" href="single.html">Read More<i class="fa fa-arrow-circle-o-right"></i></a></p>
-         </div>
-
-      </article> <!-- Entry End -->
-
-      <!-- Entry -->
-      <article class="row entry">
-
-         <div class="entry-header">
-
-            <div class="permalink">
-               <a href="single.html"><i class="fa fa-link"></i></a>
-            </div>
-
-            <div class="ten columns entry-title pull-right">
-               <h3><a href="blog-single.html">Quis autem vel esse eum iure reprehenderit qui in ea voluptate velit esse.</a></h3>
-            </div>
-
-            <div class="two columns post-meta end">
-               <p>
-               <time datetime="2014-01-28" class="post-date" pubdate="">Jan 28, 2014</time>
-               <span class="dauthor">By Naruto Uzumaki</span>
-               </p>
-            </div>
-
-         </div>
-
-         <div class="ten columns offset-2 post-content">
-            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
-            deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate.
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.
-            <a class="more-link" href="single.html">Read More<i class="fa fa-arrow-circle-o-right"></i></a></p>
-         </div>
-
-      </article> <!-- Entry End -->
-
+      {% endfor %}
    </div> <!-- Entries End -->
 
 </section> <!-- Journal Section End-->
