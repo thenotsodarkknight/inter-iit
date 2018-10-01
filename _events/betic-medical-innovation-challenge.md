@@ -1,10 +1,11 @@
 ---
-name: BeTiC Medical Innovation Challenge
-image: /assets/images/portfolio/geometrics.jpg
-date_time: 6PM | 25/11
+name: BETiC Medical Innovation Challenge
+image: /assets/images/portfolio/betic-medical-innovation-challenge.png
+date_time: 8:30AM | 20 December
 layout: event
-venue: LH-101
-link: /assets/problem_statements/BeTic-Medical-innovation-Challenge.pdf
+venue: LCH
+link: /assets/problem_statements/BETiC-Medical-Innovation-Challenge.pdf
 ---
-Ergonomic Crutches - The teams are supposed to build a simple, light weight, easy to
-use, patient friendly device ​that can bear patient’s load and assist walking/activities.
+In this era  where we are surrounded with the large number of healthcare issues, applying the engineering knowledge and skills into the medical science can help bring changes in the lives of many patients. This event challenges teams to choose a problem and to develop a solution for it. 
+
+Interdisciplinary team of 10 shall work on this. At most 4 team members shall present the work done during the meet. This will be a high-prep event which shall carry 400 event points. This event has minimum qualifying score of 150 points.  

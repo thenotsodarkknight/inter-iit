@@ -598,7 +598,7 @@ ul#nav ul li a {
    border-radius: 3px 3px 0 0;
 }
 
-.portfolio-item .portfolio-item-meta { padding: 18px 0; }
+.portfolio-item .portfolio-item-meta { padding: 18px 0; height: 100px;}
 .portfolio-item .portfolio-item-meta h5 a {
    font: 14px/18px notosans-bold, sans-serif;
    color: #11ABB0;
