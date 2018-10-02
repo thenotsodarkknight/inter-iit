@@ -1088,6 +1088,7 @@ ol.commentlist {
 }
 #team-wrapper h5 {
    font: 16px/24px notosans-bold, sans-serif;
+   font-size: 25px;
 }
 #team-wrapper span {
    position: relative;
@@ -1097,12 +1098,15 @@ ol.commentlist {
    color: #969696;
 }
 #team-wrapper .member-social {
+  display: none;
    font-size: 20px;
    font-weight: normal;
+   margin-top: 10px;
    line-height: 18px;
    color: #969696;
    margin: -12px 0 0 0;
    padding: 0;
+   text-align: center;
 }
 #team-wrapper .member-social li {
    display: inline-block;
