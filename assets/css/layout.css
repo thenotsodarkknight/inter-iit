@@ -1080,11 +1080,15 @@ ol.commentlist {
 #team-wrapper { }
 
 #team-wrapper .member {
-   margin-bottom: 24px;
+   margin-bottom: 70px;
    margin-top: 12px;
+   text-align: center;
+   height: 200px;
 }
 #team-wrapper img {
-	margin-bottom: 12px;
+  margin-bottom: 12px;
+  height: 100%;
+  width: auto;
 }
 #team-wrapper h5 {
    font: 16px/24px notosans-bold, sans-serif;
