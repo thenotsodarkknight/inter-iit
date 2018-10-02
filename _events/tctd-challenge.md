@@ -1,7 +1,7 @@
 ---
 name: TCTD Challenge
 image: /assets/images/portfolio/tctd-challenge.png
-date_time: 15:00PM | 19 December
+date_time: 3:00PM | 19 December
 layout: event
 venue: LCH
 link: /assets/problem_statements/TCTD-Challenge.pdf
