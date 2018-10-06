@@ -2,15 +2,17 @@
 
 {% assign url = site.baseurl | prepend: site.url %}
 
-{% capture description %}{% if page.meta_description %}{{ page.meta_description }}{% elsif page.teaser %}{{ page.teaser }}{% elsif page.excerpt %}{{ page.excerpt }}{% elsif site.description %}{{ site.description }}{% endif %}{% endcapture %}
-{% assign description = description | strip_html | escape | strip %}
-
 {% capture title %}{% if page.meta_title %}{{ page.meta_title}}{% elsif page.title %}{{ page.title }}{% else %}{{ site.title | strip_html | strip }}{% endif %}{% endcapture %}
 
 {% assign title = title | strip_html | escape | strip_newlines %}
 
 {% endcapture %}
-  <!--- Basic Page Needs
+
+{% capture description %}{% if page.meta_description %}{{ page.meta_description }}{% elsif page.teaser %}{{ page.teaser }}{% elsif page.excerpt %}{{ page.excerpt }}{% elsif site.description %}{{ site.description }}{% endif %}{% endcapture %}
+{% assign description = description | strip_html | escape | strip %}
+{% endcapture %}
+
+  <!--- Basic Page Needs -->
   <!DOCTYPE html>
   <!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
   <!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
@@ -21,19 +23,19 @@
      ================================================== -->
      <meta charset="utf-8">
   	<title>Inter-IIT Tech 2018</title>
-  	<meta name="description" content="">
-  	<meta name="author" content="">
+  	<meta name="description" content="{{ description }}">
+  	<meta name="author" content="Web and Coding Club, IIT Bombay">
 
      <!-- Mobile Specific Metas
      ================================================== -->
   	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  	<!-- CSS
+  	<!-- CSS and Canonical
       ================================================== -->
      <link rel="stylesheet" href="/assets/css/default.css">
   	<link rel="stylesheet" href="/assets/css/layout.css">
      <link rel="stylesheet" href="/assets/css/media-queries.css">
-
+     <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html',''}}">
      <!-- Script
      ================================================== -->
   	<script src="/assets/js/modernizr.js"></script>
