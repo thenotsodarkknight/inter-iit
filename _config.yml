@@ -16,7 +16,6 @@
 title: Inter-IIT Tech
 description: This is the official websote for Inter-IIT Tech 2018 being hosted and organized by IIT Bombay. The Inter IIT Tech Meet is a consequence of students of various IITs coming together envisioning a progressive India.  We realise that there are countless problems which our country faces due to its population, geographic expanse, climate, infrastructure etc.
 email:  interiit.tech@iitb.ac.in
-description:
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://inter-iit.tech" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
