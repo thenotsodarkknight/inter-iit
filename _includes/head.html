@@ -8,9 +8,9 @@
 
 {% endcapture %}
 
-{% capture description %}{% if page.meta_description %}{{ page.meta_description }}{% elsif page.teaser %}{{ page.teaser }}{% elsif page.excerpt %}{{ page.excerpt }}{% elsif site.description %}{{ site.description }}{% endif %}{% endcapture %}
+{% capture description %}{% if page.meta_description %}{{ page.meta_description }}{% elsif page.teaser %}{{ page.teaser }}{% elsif page.excerpt %}{{ page.excerpt }}{% elsif site.description %}{{ site.description }}{% endif %}
 {% assign description = description | strip_html | escape | strip %}
-{% endcapture %}
+{% endcapture %} 
 
   <!--- Basic Page Needs -->
   <!DOCTYPE html>
