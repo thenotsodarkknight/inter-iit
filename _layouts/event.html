@@ -4,137 +4,148 @@ layout: default
 <!doctype html>
 <html>
 
-  <!--- Basic Page Needs
+<!--- Basic Page Needs
   <!DOCTYPE html>
   <!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
-  <!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
-  <!--[if (gte IE 8)|!(IE)]><!--> <!--<![endif]-->
-  <head>
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!-->
+<!--<![endif]-->
 
-     <!--- Basic Page Needs
+<head>
+
+  <!--- Basic Page Needs
      ================================================== -->
-     <meta charset="utf-8">
-  	<title>Inter-IIT Tech 2018</title>
-  	<meta name="description" content="">
-  	<meta name="author" content="">
+  <meta charset="utf-8">
+  <title>Inter-IIT Tech 2018</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-     <!-- Mobile Specific Metas
+  <!-- Mobile Specific Metas
      ================================================== -->
-  	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  	<!-- CSS
+  <!-- CSS
       ================================================== -->
-     <link rel="stylesheet" href="/assets/css/default.css">
-  	<link rel="stylesheet" href="/assets/css/layout.css">
-     <link rel="stylesheet" href="/assets/css/media-queries.css">
+  <link rel="stylesheet" href="/assets/css/default.css">
+  <link rel="stylesheet" href="/assets/css/layout.css">
+  <link rel="stylesheet" href="/assets/css/media-queries.css">
 
-     <!-- Script
+  <!-- Script
      ================================================== -->
-  	<script src="/assets/js/modernizr.js"></script>
+  <script src="/assets/js/modernizr.js"></script>
 
-     <!-- Favicons
+  <!-- Favicons
   	================================================== -->
-  	<link rel="shortcut icon" href="/assets/favicon.ico" >
+  <link rel="shortcut icon" href="/assets/favicon.ico">
 
-  </head>
+</head>
 
-  <body>
+<body>
 
-    <!-- Header
+  <!-- Header
 ================================================== -->
-<header>
+  <header>
 
-   <div class="row">
+    <div class="row">
 
       <div class="twelve columns">
 
-         <div class="logo">
-            <a href="/"><img alt="" src="/assets/images/InterIITlogo.png"></a>
-         </div>
+        <div class="logo">
+          <a href="/"><img alt="" src="/assets/images/InterIITlogo.png"></a>
+        </div>
 
-         <nav id="nav-wrap">
+        <nav id="nav-wrap">
 
-            <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-           <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+          <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+          <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
 
-            <ul id="nav" class="nav">
+          <ul id="nav" class="nav">
 
-              <li><a href="/">Home</a></li>
-              <li><a href="/vision.html">Vision</a></li>
-              <li class="current"><a href="/events.html">Events</a>              </li>
-               </li>
-               <li><a href="/team.html">The Team</a></li>
-               <!-- <li><a href="styles.html">Features</a></li> -->
+            <li><a href="/">Home</a></li>
+            <li><a href="/vision.html">Vision</a></li>
+            <li class="current"><a href="/events.html">Events</a> </li>
+            </li>
+            <li><a href="/team.html">The Team</a></li>
+            <!-- <li><a href="styles.html">Features</a></li> -->
 
-            </ul> <!-- end #nav -->
+          </ul> <!-- end #nav -->
 
-         </nav> <!-- end #nav-wrap -->
+        </nav> <!-- end #nav-wrap -->
 
       </div>
 
-   </div>
+    </div>
 
-</header>
+  </header>
 
-<!-- Page Title
+  <!-- Page Title
 ================================================== -->
-<div id="page-title">
+  <div id="page-title">
 
-   <div class="row">
+    <div class="row">
 
       <div class="ten columns centered text-center">
-         <h1> {{page.name}} <span>.</span></h1>
+        <h1> {{page.name}} <span>.</span></h1>
 
-         <p>{{page.content | striphtml}}</p><h3 style="color:white">{{page.date_time | striphtml}} | {{page.venue | striphtml}}</h3>
+        <p>{{page.content | striphtml}}</p>
+        <h3 style="color:white">{{page.date_time | striphtml}} | {{page.venue | striphtml}}</h3>
 
       </div>
 
-   </div>
-
-</div>
-{% if page.name != "BETiC Medical Innovation Challenge" %}
-{% if page.link %}
-<section id = "info" style="height: 100vh;">
-  <div class=" align-center">
-    <div>
-      <embed src="{{page.link}}" width="60%" style="height: 100vh;" type='application/pdf'> </embed>
     </div>
-</div>
-</section>
-{% endif %}
-{% endif %}
-{% if page.name == "BETiC Medical Innovation Challenge" %}
-<section id = "info" style="height: 520vh;">
-  <div class=" align-center">
-    <div>
-      <embed src="/assets/problem_statements/betic/betic1.pdf" width="60%" style="height: 115vh;" type='application/pdf'> </embed>
-      <embed src="/assets/problem_statements/betic/12. Early Diabetes Screening.mp4" autoplay="" autostart= "" type ="video/mp4" width="60%" style="height: 60vh;" > </embed>
-      <embed src="/assets/problem_statements/betic/betic2.pdf" width="60%" style="height: 60vh;" type='application/pdf'> </embed>
-      <embed src="/assets/problem_statements/betic/17. Ergonomic crutches.mp4" autoplay="" autostart= "" type ="video/mp4" width="60%" style="height: 60vh;"> </embed>
-      <embed src="/assets/problem_statements/betic/betic3.pdf" width="60%" style="height: 65vh;" type='application/pdf'> </embed>
-      <embed src="/assets/problem_statements/betic/16. Parkinson.mp4" autoplay="" autostart= "" type ="video/mp4" width="60%" style="height: 60vh;"> </embed>
-      <embed src="/assets/problem_statements/betic/betic4.pdf" width="60%" style="height: 100vh;" type='application/pdf'> </embed>
+
+  </div>
+  {% if page.name != "BETiC Medical Innovation Challenge" %}
+  {% if page.link %}
+  <section id="info" style="height: 100vh;">
+    <div class=" align-center">
+      <div>
+        <embed src="{{page.link}}" width="60%" style="height: 100vh;" type='application/pdf'> </embed>
+      </div>
     </div>
-</div>
-</section>
-{% endif %}
+  </section>
+  {% endif %}
+  {% endif %}
+  {% if page.name == "BETiC Medical Innovation Challenge" %}
+  <section id="info" style="height: 520vh;">
+    <div class=" align-center">
+      <div>
+        <embed src="/assets/problem_statements/BETiC-Medical-Innovation-Challenge.pdf" width="60%" style="height: 115vh;"
+          type='application/pdf'>
+        </embed>
+        <video class="embed-responsive-item" style="height: 60vh; margin: 10px" width="60%" controls>
+          <source src="/assets/problem_statements/betic/12. Early Diabetes Screening.mp4" autostart="false">
+          Early Diabetes Screening
+        </video>
+        <video class="embed-responsive-item" style="height: 60vh; margin: 10px" width="60%" controls>
+          <source src="/assets/problem_statements/betic/17. Ergonomic crutches.mp4" autostart="false">
+          Ergonomic crutches
+        </video>
+        <video class="embed-responsive-item" style="height: 60vh; margin: 10px" width="60%" controls>
+          <source src="/assets/problem_statements/betic/16. Parkinson.mp4" autostart="false">
+          Parkinson Tremor Management
+        </video>
+      </div>
+    </div>
+  </section>
+  {% endif %}
 
-<div class="content-outer wrap">
-  <div id="page-content">
-    <br><br>
-         <div class="row add-bottom">
+  <div class="content-outer wrap">
+    <div id="page-content">
+      <br><br>
+      <div class="row add-bottom">
 
-           <div class="twelve columns" style="padding-top: 24px;">
+        <div class="twelve columns" style="padding-top: 24px;">
 
-              <h2 class="lead add-bottom align-center" style="color: black;">Hope you have a great time.
-              </h2>
+          <h2 class="lead add-bottom align-center" style="color: black;">Hope you have a great time.
+          </h2>
 
-           <hr>
+          <hr>
 
-           </div>
-         </div>
-       </div>
-</div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   <!-- Page Title End-->
