@@ -49,7 +49,7 @@ title: Home
 <br/>
 <!-- Intro Section
 ================================================== -->
-<section id="intro" >
+<section id="intro">
 
   <div>
     <h1 style="text-align:center; color:white;">7<sup>th</sup> Inter-IIT Tech Meet 2018<span style="color: #11ABB0">.</span></h1>
@@ -59,14 +59,14 @@ title: Home
   </div>
 </div>
    <div class="content-outer">
-     <div id="page-content">
+     <div id="page-content" style="padding-bottom: 10px">
             <div class="row add-bottom">
 
               <div class="twelve columns" style="padding-top: 24px;">
 
                  <p class="lead add-bottom" style="color: black; text-align: justify;">
                     The Inter IIT Tech Meet is a consequence of students of various IITs coming together envisioning a progressive India. We realise that there are countless problems which our country faces due to its population, geographic expanse, climate, infrastructure etc. A lot of efforts are being put by various educational institutes for coming up with technology solutions which could address these issues. Numerous government policies and initiatives have created opportunities for promoting and encouraging the development of technology to address the issues. We feel that that IITs being premier education and research institutes must spearhead these initiatives. Enhanced collaboration between IITs would foster development of technology solutions and also encourage more and more graduating students to pursue this into full time ventures wherein they take this technology from research labs to end users, impacting a million lives.
-              <br/> <br/>
+               <br/>
                  
               </p>
 
@@ -81,7 +81,7 @@ title: Home
 
 <!-- Journal Section
 ================================================== -->
-<section id="journal">
+<section id="journal" style="padding-top: 0px">
 
    <div class="row">
       <div class="twelve columns align-center" >
@@ -102,6 +102,7 @@ title: Home
 
             <div class="ten columns entry-title pull-right" id="{{ post.id }}">
                <h3 style="color: #11ABB0;" ><a href="#{{post.id}}">{{ post.name }}</a></h3>
+               {{ post.content | striphtml }} 
             </div>
 
             <div class="two columns post-meta end">
@@ -112,10 +113,11 @@ title: Home
             </div>
 
          </div>
-
+         {% comment %}
          <div class="ten columns offset-2 post-content">
-            {{ post.content | markdownify }}
+            {{ post.content | markdownify | striphtml }}
          </div>
+         {% endcomment %}
 
       </article> <!-- Entry End -->
       {% endfor %}
