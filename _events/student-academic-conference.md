@@ -1,7 +1,7 @@
 ---
 name: Student Academic Conference
 image: /assets/images/portfolio/student-academic-conference.png
-date_time: 8:30AM | 20 December
+date_time: 10:00AM - 4:00PM | 20 December
 layout: event
 venue: VMCC
 link: /assets/problem_statements/Student-Academic-Conference.pdf

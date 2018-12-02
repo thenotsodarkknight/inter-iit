@@ -1,7 +1,7 @@
 ---
 name: Case Study
 image: /assets/images/portfolio/case-study.png
-date_time: 2:30PM | 18 December
+date_time: 8:30AM - 1:30PM | 19 December
 layout: event
 venue: LCH
 ---

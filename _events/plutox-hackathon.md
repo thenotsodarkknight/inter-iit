@@ -1,7 +1,7 @@
 ---
 name: PlutoX Hackathon
 image: /assets/images/portfolio/plutox-hackathon.png
-date_time: 10AM | 19 December
+date_time: ALL DAY | 19-20 December
 layout: event
 venue: LCH
 ---

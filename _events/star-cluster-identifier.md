@@ -1,7 +1,7 @@
 ---
 name: Star Cluster Identifier
 image: /assets/images/portfolio/star-cluster-identifier.png
-date_time: 8:30AM | 19 December
+date_time: 8:30AM - 1:30PM| 19 December
 layout: event
 venue: LCH
 ---

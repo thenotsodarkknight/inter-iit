@@ -1,7 +1,7 @@
 ---
 name: Engineers' Conclave
 image: /assets/images/portfolio/engineers-conclave.png
-date_time: 9:30AM | 18 December
+date_time: 10:00AM - 3:00PM | 18 December
 layout: event
 venue: VMCC
 ---

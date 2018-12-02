@@ -1,7 +1,7 @@
 ---
 name: The Eye in the Sky
 image: /assets/images/portfolio/the-eye-in-the-sky.png
-date_time: 8:30AM | 19 December
+date_time: 8:30AM - 1:30AM | 19 December
 layout: event
 venue: LCH
 link: /assets/problem_statements/The-Eye-in-the-Sky.pdf
